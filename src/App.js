@@ -5,6 +5,8 @@ import Logo from './Components/Logo/Logo';
 import ImageLinkForm from './Components/ImageLinkForm/ImageLinkForm';
 import Rank from './Components/Rank/Rank';
 import './App.css';
+
+
 const particlesOptions = {
   particles: {
     line_linked: {
@@ -20,13 +22,13 @@ class App extends Component {
   render() {
   return (
     <div className="App">
-    <Particles 
+    <Particles className='particles'
     params={particlesOptions}
   />
       <Navigation />
       <Logo />
-      <ImageLinkForm />
       <Rank />
+      <ImageLinkForm />
       {/*<FaceRecognition />*/}
     </div>
   );
